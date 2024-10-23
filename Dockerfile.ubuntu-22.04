@@ -3,6 +3,8 @@ USER root
 RUN apt-get update -qy \
     && apt-get install -y --no-install-recommends --fix-missing \
     build-essential \
+    libssl-dev \
+    libmysqlclient-dev \
     rsync \
     && rm -rf /var/lib/apt/lists/*
 USER runner
