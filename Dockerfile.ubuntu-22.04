@@ -5,6 +5,7 @@ RUN apt-get update -qy \
     build-essential \
     libssl-dev \
     libmysqlclient-dev \
+    nodejs \
     rsync \
     && rm -rf /var/lib/apt/lists/*
 USER runner
