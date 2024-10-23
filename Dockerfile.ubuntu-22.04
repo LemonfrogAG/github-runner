@@ -7,6 +7,7 @@ RUN apt-get update -qy \
     libmysqlclient-dev \
     nodejs \
     tzdata \
+    yarn \
     rsync \
     && rm -rf /var/lib/apt/lists/*
 USER runner
