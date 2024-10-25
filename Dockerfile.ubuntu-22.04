@@ -1,13 +1,14 @@
 FROM ghcr.io/actions/actions-runner:2.320.0
 USER root
 RUN apt-get update -qy \
+    && apt-get install -y --no-install-recommends --fix-missing curl \
+    && curl -fsSL https://deb.nodesource.com/setup_18.x | bash - \
     && apt-get install -y --no-install-recommends --fix-missing \
     build-essential \
     libssl-dev \
     libmysqlclient-dev \
-    nodejs \
-    npm \
     tzdata \
+    nodejs \
     rsync \
     && npm install --global yarn \
     && rm -rf /var/lib/apt/lists/*
