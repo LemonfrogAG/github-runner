@@ -9,6 +9,7 @@ RUN apt-get update -qy \
     libmysqlclient-dev \
     tzdata \
     nodejs \
+    graphviz \
     rsync \
     && npm install --global yarn \
     && rm -rf /var/lib/apt/lists/*
