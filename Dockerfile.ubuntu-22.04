@@ -10,6 +10,20 @@ RUN apt-get update -qy \
     tzdata \
     nodejs \
     graphviz \
+    libxss1 \
+    libappindicator3-1 \
+    libasound2 \
+    libatk-bridge2.0-0 \
+    libatk1.0-0 \
+    libatspi2.0-0 \
+    libnss3 \
+    libxcomposite1 \
+    libxrandr2 \
+    libu2f-udev \
+    fonts-liberation \
+    libgbm1 \
+    xdg-utils \
+    imagemagick \
     rsync \
     && npm install --global yarn \
     && rm -rf /var/lib/apt/lists/*
